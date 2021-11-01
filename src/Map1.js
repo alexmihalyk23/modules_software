@@ -12,7 +12,7 @@ const Map1 = () => {
     }}
   >
      <FullscreenControl />
-    //<GeolocationControl options={{ float: 'left' }} />
+    {/*<GeolocationControl options={{ float: 'left' }} />*/}
     <ZoomControl options={{ float: 'left' }} />
   </Map>
 </YMaps>
