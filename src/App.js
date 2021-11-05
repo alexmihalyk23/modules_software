@@ -1,7 +1,7 @@
 import React from 'react';
 import Map1 from './Map1';
 import DownloadApp from './DownloadApp';
-// import GISmap from "./GISmap";
+import GISmap from "./GISmap";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
     {/* <Hosting /> */}
       <Map1 />
       <DownloadApp/>
-        {/*<GISmap></GISmap>*/}
+        <GISmap></GISmap>
     </div>
   );
 }

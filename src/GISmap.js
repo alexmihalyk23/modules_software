@@ -17,7 +17,7 @@ export const GISmap = () => {
             map = new mapglAPI.Map('map-container', {
                 center: [55.31878, 25.23584],
                 zoom: 13,
-                key: 'your API key',
+                key: 'ruimxv3796',
             });
         });
 
