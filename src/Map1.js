@@ -11,7 +11,7 @@ const Map1 = () => {
                     controls: [],
                 }}
             >
-                <Placemark defaultGeometry = {[55.018803, 82.933952]}/>
+                <Placemark defaultGeometry = {[55.025275, 82.928328]}/>
                 <FullscreenControl />
                 <ZoomControl options={{ float: 'left' }} />
             </Map>
