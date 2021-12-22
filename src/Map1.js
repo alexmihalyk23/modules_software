@@ -1,5 +1,5 @@
 import React from 'react';
-import { YMaps, Map,FullscreenControl, ZoomControl  } from 'react-yandex-maps'
+import { YMaps, Map,FullscreenControl, ZoomControl, Placemark  } from 'react-yandex-maps'
 
 const Map1 = () => {
     return (
