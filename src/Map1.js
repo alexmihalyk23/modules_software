@@ -11,7 +11,7 @@ const Map1 = () => {
                     controls: [],
                 }}
             >
-                <Placemark defaultGeometry = {[55.025275, 82.928328]} onClick = { ( )  =>  alert ( 'Hello !!!' ) }/>
+                <Placemark defaultGeometry = {[55.025275, 82.928328]} onClick = { ( )  =>  alert ( 'Да ты тыкнул на Глобус. Молодец' ) }/>
                 <FullscreenControl />
                 <ZoomControl options={{ float: 'left' }} />
             </Map>
