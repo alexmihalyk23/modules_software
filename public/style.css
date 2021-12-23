@@ -13,8 +13,6 @@ header{
 h2{
     margin-left: 77px;
     display: flex;
-
-
 }
 a{
     outline: none;
@@ -30,6 +28,7 @@ a{
      z-index: 2;
      display: flex;
      align-items: center;
+
 
 
  }
@@ -53,7 +52,6 @@ a{
     margin: 126px  0 0 136px;
     z-index: 1;
 
-
 }
 .textbar h1{
     font-size: 60px;
@@ -66,20 +64,63 @@ a{
 .img{
     position: relative;
     top: 0;
-    display: flex;
+    width: 100%;
+    height: 400px;
     margin-left: 300px;
-    max-width: 100%;
-    background-color: rgba(13,50,87, 0.5);
-    overflow: hidden;
+    background: rgba(13,50,87, 0.5);
+    background: url('img/background.jpg') 50%/cover no-repeat;
+    z-index: -2;
 }
-.img img{
+.bord{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    background: rgba(13,50,87, 0.5);
     z-index: -1;
-    max-width: 100%;
-
-
 }
+
+/*.img img{*/
+/*    !*background: 0 0/;*!*/
+/*    z-index: -1;*/
+/*    background: 0 0 /cover;*/
+/*    background-image:url("img/background.jpg");*/
+
+/*}*/
+/*.img{*/
+/*    background-image: url("img/background.jpg");*/
+/*    background-color: red;*/
+/*    height: 3000000px;*/
+/*}*/
 .slider{
+    display: flex;
     background-color: white;
     width: 100%;
-    height:100px;
+    height:140px;
+    flex-wrap: wrap;
+}
+.social{
+    flex: 0 1 300px;
+    background-color: #ffffff;
+    max-height: 140px;
+}
+.imgSiz{
+    background: rgba(13,50,87, 0.5);
+    z-index: 1;
+}
+.imgSiz img{
+    position: relative;
+    top: 0;
+    max-width: 260px;
+    max-height: 140px;
+
+}
+.imgSiz a{
+   position: absolute;
+    z-index: 1 ;
+
+}
+.imgSiz p{
+    position: absolute;
+    z-index: 1;
 }
