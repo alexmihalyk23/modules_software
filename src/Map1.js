@@ -30,6 +30,9 @@ const Map1 = () => {
                 <Placemark defaultGeometry = {[55.030409, 82.924497]}/>
                 {/*Академ*/}
                 <Placemark defaultGeometry = {[54.843583,83.107401]}/>
+                {/*Поставьте 5 пожалуйста*/}
+                <Placemark defaultGeometry = {[54.978565,82.899302]}
+                           properties={{ hintContent: 'Поставьте 5 пожалуйста'}} modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}/>
                 <FullscreenControl />
                 <ZoomControl options={{ float: 'left' }} />
             </Map>
