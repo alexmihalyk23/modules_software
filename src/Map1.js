@@ -27,7 +27,7 @@ const Map1 = () => {
                 {/*Бугринка*/}
                 <Placemark defaultGeometry = {[54.974867, 82.962731]}/>
                 {/*Оперный*/}
-                <Placemark defaultGeometry = {[55.030409, 82.924497]}/>
+                <Placemark defaultGeometry = {[55.030409, 82.924497]} onClick = { ( )  => openInNewTab('img/Rectangle 38@2x.png')}/>
                 {/*Академ*/}
                 <Placemark defaultGeometry = {[54.843583,83.107401]}/>
                 {/*Поставьте 5 пожалуйста*/}
