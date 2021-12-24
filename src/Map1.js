@@ -30,7 +30,6 @@ const Map1 = () => {
                 <Placemark defaultGeometry = {[55.030409, 82.924497]}/>
                 {/*Академ*/}
                 <Placemark defaultGeometry = {[54.843583,83.107401]}/>
-
                 <FullscreenControl />
                 <ZoomControl options={{ float: 'left' }} />
             </Map>
