@@ -8,8 +8,6 @@ function App() {
     <div align="center">
     {/* <Hosting /> */}
       <Map1 />
-      <DownloadApp/>
-        <GISmap></GISmap>
     </div>
   );
 }

@@ -1,15 +1,21 @@
 import React from 'react';
-import { YMaps, Map,FullscreenControl, ZoomControl, Placemark  } from 'react-yandex-maps'
+import { YMaps, Map,FullscreenControl, ZoomControl, Placemark } from 'react-yandex-maps'
 
 const Map1 = () => {
     return (
         <YMaps>
             <Map
+                width = '800px'
+                height = '200px'
+
                 defaultState={{
                     center: [55.018803, 82.933952],
                     zoom: 9,
                     controls: [],
+
                 }}
+
+
             >
                 <Placemark defaultGeometry = {[55.025275, 82.928328]} onClick = { ( )  =>  alert ( 'Да ты тыкнул на Глобус. Молодец' ) }/>
                 <FullscreenControl />
