@@ -11,7 +11,7 @@ const Map1 = () => {
         <YMaps>
             <Map
                 width = '800px'
-                height = '200px'
+                height = '500px'
 
                 defaultState={{
                     center: [55.018803, 82.933952],
