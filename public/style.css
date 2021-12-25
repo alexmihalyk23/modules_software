@@ -160,11 +160,16 @@ a{
 .gallery{
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 90%;
+    max-width: 100%;
 }
-
+.discribe{
+    max-width: 500px;
+    margin: auto;
+}
 .bord1{
     position: relative;
-    flex: 1 1 ;
+    max-width: 400px;
     height: 300px;
     background-color: #2a4c72;
     border-radius: 20px;
@@ -190,7 +195,7 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ffffff;
+    background: #053055;
     clip-path: circle(120px at center);
     transition: 0.5s;
 }
@@ -212,28 +217,31 @@ a{
 }
 .bord1:hover img{
     opacity: 0;
-
-    width: 310px;
-    height: 240px;
+   top: 200px;
+    width: 110px;
+    height: 80px;
 
 }
 .bord1 .content{
     position: relative;
-    width: 50%;
+    width: 100%;
+    font-size: 15px;
     padding: 20px 20px 20px 40px;
     opacity: 0;
     transition: 0.5s;
+
 }
 .bord1:hover .content{
     left: 0;
     opacity: 1;
-    color: black;
+    color: #ffffff;
+
 }
 .section2{
     display: flex;
     flex-direction: column;
 
 }
-h2{
-  margin: auto;
+h2 {
+    margin: auto;
 }
