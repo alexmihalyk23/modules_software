@@ -16,7 +16,7 @@ header{
     flex-wrap: wrap;
     /*min-height: 100vh;*/
 }
-h2{
+.menu h2{
     margin-left: 77px;
     display: flex;
 }
@@ -164,6 +164,7 @@ a{
     justify-content: center;
 }
 .discribe{
+
     max-width: 500px;
     margin-left: 60px;
 
@@ -175,6 +176,7 @@ a{
     background-color: #13487f;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     transition: 0.5s;
 }
@@ -225,12 +227,23 @@ a{
 }
 .bord1 .content{
     position: relative;
-    width: 100%;
+    max-width: 90%;
     font-size: 15px;
-    padding: 20px 20px 20px 40px;
+    padding: 0 20px 40px 40px;
     opacity: 0;
     transition: 0.5s;
 
+}
+.head{
+    display: inline-flex;
+    position: relative;
+    bottom: 10px;
+    padding: 20px;
+   max-width: 80%;
+    font-size: 15px;
+    opacity: 1;
+    color: #ffffff;
+    z-index: 2;
 }
 .bord1:hover .content{
     left: 0;
@@ -244,7 +257,7 @@ a{
     margin: 50px;
 
 }
-h2 {
+.gal {
     margin: auto;
 }
 h3{
