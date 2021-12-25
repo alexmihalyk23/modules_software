@@ -16,10 +16,14 @@ header{
     flex-wrap: wrap;
     /*min-height: 100vh;*/
 }
-.menu h2{
-    margin-left: 77px;
+.menu {
     display: flex;
 }
+.menu h2{
+    margin-left: 77px;
+    justify-content: start;
+}
+
 a{
     outline: none;
     text-decoration: none;
@@ -34,6 +38,7 @@ a{
      z-index: 8;
      display: flex;
      align-items: center;
+     justify-content:  end;
  }
  .menu ul{
      list-style-type: none;
@@ -41,6 +46,9 @@ a{
      flex-wrap: wrap;
      align-items: start;
      margin: 15px 0 15px  350px ;
+     flex: 1 1;
+     justify-content: end;
+
  }
  .menu ul li{
      padding-right:  91px;
@@ -163,12 +171,7 @@ a{
     max-width: 100%;
     justify-content: center;
 }
-.discribe{
 
-    max-width: 500px;
-    margin-left: 60px;
-
-}
 .bord1{
     position: relative;
     max-width: 350px;
@@ -256,6 +259,18 @@ a{
     flex-direction: column;
     margin: 50px;
 
+
+
+}
+.discribe{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+
+}
+.discribe p {
+    max-width: 500px;
 }
 .gal {
     margin: auto;
@@ -265,3 +280,5 @@ h3{
     font-size: 20px;
     margin: 10px;
 }
+
+footer
