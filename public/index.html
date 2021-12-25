@@ -21,14 +21,14 @@
     <title>NSK trip</title>
   </head>
   <body>
-  <header>
+  <header id="top">
     <div class="menu">
       <h2> NSK trip </h2>
-      <ul>
-        <li><a href="">Главная</a></li>
-        <li><a href="">Галерея</a></li>
-        <li><a href="">Карта</a></li>
-        <li><a href="">О нас</a></li>
+      <ul id="main_nav_ul">
+        <li><a href="#top">Главная</a></li>
+        <li><a href="#top_but">Галерея</a></li>
+        <li><a href="#map">Карта</a></li>
+        <li><a href="#footer">О нас</a></li>
       </ul>
     </div>
     <div class="bord"></div>
@@ -43,7 +43,7 @@
 
     <div class="slider">
       <div class="social">
-        <img src="img/Vector.svg" alt="#">
+<!--        <img src="img/Vector.svg" alt="#">-->
       </div>
       <div class="hhover">
       <div class="imgSiz">
@@ -65,13 +65,13 @@
       <div class="imgSiz">
         <div class="cover"></div>
         <p>04</p>
-        <a href="">Академ городок</a>
+        <a href="" >Академ городок</a>
         <img src="img/istockphoto-1346856470-612x612%201.png" alt=""></div>
     </div>
 
   </header>
 
-  <section class="section2">
+  <section class="section2" id="top_but">
 
     <h2> Галерея
     </h2>
@@ -108,7 +108,7 @@
       <div class="content">
 
         <h2>Здание Академии наук СССР</h2>
-        <p>Здание, вкотором находился западно-сибирский филиал АН СССР (г. Новосибирск, ул. Фрунзе, 11). Построено в 1937 — 1947 гг. Архитекторы  — А. Д. Крячков, Н. Г. Васильев, Ф. Ф. Барицкий.  Скульпторы — В. Ф. Штейн, И. С. Ковшов.  Здание признано памятником истории регионального значения (решение облисполкома №236 от 14.04.1976 г.). В настоящее время здание занимает Институт систематики и экологии животных СО РАН. </p>
+        <p>Здание, вкотором находился западно-сибирский филиал АН СССР (г. Новосибирск, ул. Фрунзе, 11). Построено в 1937 — 1947 гг. Архитекторы  — А. Д. Крячков, Н. Г. Васильев, Ф. Ф. Барицкий.  Скульпторы — В. Ф. Штейн, И. С. Ковшов.  Здание признано памятником истории регионального значения (решение облисполкома №236 от 14.04.1976 г.). </p>
 
       </div>
       <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/d3/ad/af/caption.jpg?w=2000&h=-1&s=1" alt="">
@@ -168,7 +168,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script>$(document).ready(function(){
+    $('#main_nav_ul').click(function(event){
+      if (event.target.tagName.toLowerCase() === 'a') {
+        var target = $(event.target.hash);
+        target = target.length ? target : $('[name=' + event.target.hash+ ']');
+        console.log(target.length);
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 100
+          }, 2000);
+          return false;
+        }
+      }
+    });
 
+  })</script>
   </body>
 <!--<footer class="footer">-->
 <!--  <div class="footer-list-container">-->
