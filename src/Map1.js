@@ -26,11 +26,11 @@ const Map1 = () => {
                 {/*Глобус*/}
                 <Placemark defaultGeometry = {[55.025275, 82.928328]} onClick = { ( )  => openInNewTab('img/istockphoto-1346856470-612x612%201.png')}/>
                 {/*Бугринка*/}
-                <Placemark defaultGeometry = {[54.974867, 82.962731]}/>
+                <Placemark defaultGeometry = {[54.974867, 82.962731]} properties={{balloonContent: 'Бугринский мост'}} modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}/>
                 {/*Оперный*/}
                 <Placemark defaultGeometry = {[55.030409, 82.924497]} onClick = { ( )  => openInNewTab('img/Rectangle 38@2x.png')}/>
                 {/*Академ*/}
-                <Placemark defaultGeometry = {[54.843583,83.107401]}/>
+                <Placemark defaultGeometry = {[54.843583,83.107401]} properties={{balloonContent: 'Академгородок Известное место науки и достижений'}} modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}/>
                 {/*Поставьте 5 пожалуйста*/}
                 <Placemark defaultGeometry = {[54.980207,82.897808]}
                            properties={{ hintContent: 'Поставьте 5 пожалуйста'}} modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}/>
