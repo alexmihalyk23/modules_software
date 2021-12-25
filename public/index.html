@@ -17,6 +17,7 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="style.css">
     <script src="src/index.js"></script>
+    <script src="../src/anim.jsx"></script>
 <!--    Check update-->
     <title>NSK trip</title>
   </head>
@@ -168,22 +169,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <script>$(document).ready(function(){
-    $('#main_nav_ul').click(function(event){
-      if (event.target.tagName.toLowerCase() === 'a') {
-        var target = $(event.target.hash);
-        target = target.length ? target : $('[name=' + event.target.hash+ ']');
-        console.log(target.length);
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top - 100
-          }, 2000);
-          return false;
-        }
-      }
-    });
 
-  })</script>
   </body>
 <!--<footer class="footer">-->
 <!--  <div class="footer-list-container">-->

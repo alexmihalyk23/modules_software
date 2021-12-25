@@ -3,7 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import $ from 'jquery';
 
+console.log("fff");
+$(document).ready(function(){
+    $('#main_nav_ul').click(function(event){
+        if (event.target.tagName.toLowerCase() === 'a') {
+            let target = $(event.target.hash);
+            target = target.length ? target : $('[name=' + event.target.hash+ ']');
+            console.log(target.length);
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top -100
+                }, 2000);
+                return false;
+            }
+        }
+    });
+
+})
 ReactDOM.render(
   <React.StrictMode>
     <App />

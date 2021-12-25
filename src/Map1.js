@@ -5,7 +5,6 @@ const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
     if (newWindow) newWindow.opener = null
 }
-
 const Map1 = () => {
     return (
         <YMaps>
@@ -36,6 +35,7 @@ const Map1 = () => {
                            properties={{ hintContent: 'Поставьте 5 пожалуйста'}} modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}/>
                 <FullscreenControl />
                 <ZoomControl options={{ float: 'left' }} />
+
             </Map>
         </YMaps>
     );
