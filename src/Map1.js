@@ -1,5 +1,5 @@
 import React from 'react';
-import { YMaps, Map,FullscreenControl, ZoomControl, Placemark } from 'react-yandex-maps'
+import { YMaps, Map,FullscreenControl, ZoomControl, Placemark, TypeSelector } from 'react-yandex-maps'
 
 const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -22,6 +22,7 @@ const Map1 = () => {
 
 
             >
+                <TypeSelector></TypeSelector>
                 {/*Глобус*/}
                 <Placemark defaultGeometry = {[55.025275, 82.928328]} onClick = { ( )  => openInNewTab('img/istockphoto-1346856470-612x612%201.png')}/>
                 {/*Бугринка*/}
@@ -31,7 +32,7 @@ const Map1 = () => {
                 {/*Академ*/}
                 <Placemark defaultGeometry = {[54.843583,83.107401]}/>
                 {/*Поставьте 5 пожалуйста*/}
-                <Placemark defaultGeometry = {[54.978565,82.899302]}
+                <Placemark defaultGeometry = {[54.980207,82.897808]}
                            properties={{ hintContent: 'Поставьте 5 пожалуйста'}} modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}/>
                 <FullscreenControl />
                 <ZoomControl options={{ float: 'left' }} />
