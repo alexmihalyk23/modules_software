@@ -315,7 +315,7 @@ h3{
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        margin-right: 20px;
+        justify-content: end;
     }
     .menu ul li{
         margin: 5px;
