@@ -100,7 +100,7 @@ a{
 .social{
     flex: 0 1 300px;
     background-color: #ffffff;
-    max-height: 140px;
+    max-height: 200px;
 }
 
 .imgSiz{
@@ -386,6 +386,25 @@ h3{
         z-index: 3;
         font-family: 'Waterfall', cursive;
         font-size: 5px;
+    }
+    .about{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        background-color: white;
+        align-items: center;
+
+    }
+    .about p {
+        max-width: 100px;
+        color: black;
+        font-size: 7px;
+    }
+    .about img{
+        margin: 15px;
+        max-width: 150px;
+
     }
 
 }
