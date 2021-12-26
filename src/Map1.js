@@ -9,7 +9,7 @@ const Map1 = () => {
     return (
         <YMaps>
             <Map
-                width = '50%'
+                width = '80%'
                 height = '400px'
 
 
