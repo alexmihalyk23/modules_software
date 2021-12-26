@@ -9,8 +9,8 @@ const Map1 = () => {
     return (
         <YMaps>
             <Map
-                width = '800px'
-                height = '500px'
+                width = '100%'
+                height = '400px'
 
                 defaultState={{
                     center: [55.018803, 82.933952],
