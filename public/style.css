@@ -132,13 +132,6 @@ a{
     z-index: 2;
     transition: 2s;
 }
-/*.cover:hover{*/
-
-/*    max-width: 210px;*/
-/*    height: 140px;*/
-
-/*    font-size: 20px;*/
-/*}*/
 
 .imgSiz a{
    position: absolute;
@@ -268,7 +261,18 @@ h3{
 .foot{
     background-color: #13487f;
     width: 100%;
-}.map{
+    display: flex;
+    align-items: center;
+}
+
+.foot img{
+    width: 50%;
+}
+.nsk{
+    display: flex;
+    justify-content: end;
+}
+.map{
     text-align: center;
  }
  .about{
@@ -300,23 +304,28 @@ h3{
         background-color: #13487f;
         position: fixed;
         top: 0;
-
         z-index: 8;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         margin: 0;
     }
     .menu ul{
-        flex-direction: row;
         list-style-type: none;
         display: flex;
-        justify-content: end;
-
+        flex-direction: row;
+        margin-right: 20px;
     }
     .menu ul li{
         margin: 5px;
+        font-size: 10px;
     }
+    .menu h2{
+        margin-left: 17px;
+        justify-content: start;
+    }
+
     .textbar{
         display: flex;
         flex-wrap: wrap;
@@ -344,43 +353,43 @@ h3{
         z-index: -2;
     }
     .slider{
+        display: flex;
         background-color: white;
         width: 100%;
         height:50px;
     }
+
     .social{
-        flex: 0 1 ;
+        flex: 0 1 300px;
         background-color: #ffffff;
-        max-height: 140px;
+        max-height: 200px;
     }
-    .cover{
-        position: absolute;
-        width: 70px;
-        height: 50px;
-        background: rgba(13,50,87, 0.5);
-        z-index: 2;
-        transition: 2s;
-    }
+
     .imgSiz{
-        width: 70px;
-        height: 50px;
-        transition: 1s;
+        display: none;
+    }
+    .imgSiz .cover:hover{
+        display: none;
 
     }
-    
+    .imgSiz img{
+        display: none;
+    }
+
+
+    .cover{
+        display: none;
+    }
+
     .imgSiz a{
-        position: absolute;
-        margin: 25px;
-        z-index: 3;
-        font-size: 5px;
+        display: none;
     }
 
     .imgSiz p{
-        position: absolute;
-        z-index: 3;
-        font-family: 'Waterfall', cursive;
-        font-size: 5px;
+        display: none;
     }
+
+
     .about{
         max-width: 100%;
         display: flex;
