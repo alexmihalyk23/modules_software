@@ -5,14 +5,12 @@ const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
     if (newWindow) newWindow.opener = null
 }
-state = {width: '100%', height: '100%'};
 const Map1 = () => {
-    const {width, height} = this.state;
     return (
         <YMaps>
             <Map
-                width = {width}
-                height = {height}
+                width = '800px'
+                height = '500px'
 
                 defaultState={{
                     center: [55.018803, 82.933952],
