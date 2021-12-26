@@ -39,13 +39,15 @@ a{
      display: flex;
      align-items: center;
      justify-content:  end;
+
  }
  .menu ul{
      list-style-type: none;
      display: flex;
      flex-wrap: wrap;
      align-items: start;
-     margin: 15px 0 15px  350px ;
+
+     margin: 15px 0 15px  50px ;
      flex: 1 1;
      justify-content: end;
 
@@ -100,19 +102,7 @@ a{
     background-color: #ffffff;
     max-height: 140px;
 }
-.hhover{
-    /*border: 3px red solid;*/
-    width: 210px;
-    transition: 3s;
-}
-/*.hhover:hover{*/
-/*    font-size: 15px;*/
-/*    width: 300px;*/
-/*}*/
 
-/*.hhover:hover .imgSiz img{*/
-
-/*}*/
 .imgSiz{
     max-height: 140px;
     max-width: 210px;
@@ -120,9 +110,6 @@ a{
 }
 .imgSiz .cover:hover{
     background: rgba(2, 13, 24, 0.5);
-
-}
-.imgSiz:hover  a {
 
 }
 .imgSiz img{
@@ -284,6 +271,25 @@ h3{
 }.map{
     text-align: center;
  }
+ .about{
+     max-width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 100px;
+     background-color: white;
+     height:200px;
+     align-items: center;
+
+ }
+ .about p {
+     max-width: 500px;
+     color: black;
+ }
+ .about img{
+     margin: 15px;
+     max-width: 200px;
+
+ }
  @media (max-width: 767px){
 
  }
@@ -293,22 +299,23 @@ h3{
         background-color: #13487f;
         position: fixed;
         top: 0;
+
         z-index: 8;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content:  end;
         margin: 0;
     }
     .menu ul{
 
-        flex-direction: column;
+        flex-direction: row;
         list-style-type: none;
         display: flex;
         justify-content: end;
 
     }
     .menu ul li{
-        padding:0;
+        margin: 5px;
     }
     .textbar{
         display: flex;
@@ -336,6 +343,51 @@ h3{
         background: url('img/background.jpg') 50%/cover no-repeat;
         z-index: -2;
     }
+    .slider{
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height:50px;
+    }
+    .social{
+        flex: 0 1 120px;
+        background-color: #ffffff;
+        max-height: 140px;
+    }
+    .cover{
+        position: absolute;
+        width: 60px;
+        height: 50px;
+        background: rgba(13,50,87, 0.5);
+        z-index: 2;
+        transition: 2s;
+    }
+    .imgSiz{
+        height: 50px;
+        width: 50px;
+        transition: 1s;
+        display: flex;
+    }
+
+    .imgSiz img{
+
+        width: 100px;
+        height: 50px;
+    }
+    .imgSiz a{
+        position: absolute;
+        margin: 25px;
+        z-index: 3;
+        font-size: 5px;
+    }
+
+    .imgSiz p{
+        position: absolute;
+        z-index: 3;
+        font-family: 'Waterfall', cursive;
+        font-size: 5px;
+    }
+
 }
 @media (max-width: 767px){
 
