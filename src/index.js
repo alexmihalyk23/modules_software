@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import $ from 'jquery';
 
-console.log("fff");
 $(document).ready(function(){
     $('#main_nav_ul').click(function(event){
         if (event.target.tagName.toLowerCase() === 'a') {
